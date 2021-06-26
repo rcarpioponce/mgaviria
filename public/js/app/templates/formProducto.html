@@ -1,0 +1,50 @@
+<form role="form" id="FormularioProducto" class="formProducto">
+				  <div class="form-group">
+				    <label for="nombre">Nombre</label>
+				    <input type="text" name="nombre" class="form-control nombre" placeholder="Nombre del producto" value="<%=nombre %>" required minlength="2">
+				  </div>				  
+				  <div class="form-group">
+				    <label for="nombre">Descripción</label>
+				    <textarea name="descrípcion" class="form-control descripcion" placeholder="Descripción del producto" required minlength="2"><%=descripcion %></textarea>
+				  </div>
+				  <div class="form-group">
+				  	<div class="row">
+				  		<div class="col-lg-6">
+						    <label for="nombre">Precio de venta</label>
+								<div class="input-group m-b">
+									<span class="input-group-addon">S/.</span> 
+							    	<input type="text" name="precio_venta" class="form-control precio_venta" placeholder="Precio de venta del producto" value="<%=precio_venta %>" required>
+								</div>	
+				  		</div>
+				  		<div class="col-lg-6">
+						    <label for="nombre">Precio base</label>
+							<div class="input-group m-b">
+								<span class="input-group-addon">S/.</span>
+							    <input type="text" name="precio_base" class="form-control precio_base" placeholder="Precio base del producto" value="<%=precio_base %>" required>
+							</div>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="form-group">
+				    <div class="row">
+				    	<div class="col-lg-6">
+						    <label for="nombre">Stock Mínimo</label>
+						    <input type="text" name="stock_minimo" class="form-control stock_minimo" placeholder="Stock mínimo" value="<%=stock_minimo %>" required>
+				    	</div>
+				    	<div class="col-lg-6">
+						    <label for="nombre">Stock Máximo</label>
+						    <input type="text" name="stock_maximo" class="form-control stock_maximo" placeholder="Stock mínimo" value="<%=stock_maximo %>" required>
+				    	</div>
+				    </div>
+				  </div>				  					  				  
+				  <div class="form-group">
+				    <label>Unidad</label>
+				    <select class="form-control unidad" name="unidad_id">
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label>Categoría</label>
+				    <select class="form-control categoria" name="categoria_id">
+					</select>
+				  </div>				  
+</form>

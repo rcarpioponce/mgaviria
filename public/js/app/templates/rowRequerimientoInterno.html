@@ -1,0 +1,11 @@
+<td><%= id%></td>
+<td><%= local%></td>
+<td><%= created_at %></td>
+<td>
+<label class="label <%if(estado == "pendiente"){%>label-success<%}else{%>label-primary<%}%>">
+<%= estado %>
+</label>
+</td>
+<td>
+    <div class="btn btn-success btnEditar"><i class="fa fa-pencil"></i> Detalle</div>
+</td>

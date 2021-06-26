@@ -1,0 +1,39 @@
+<form role="form" id="FormularioUsuario" class="formUsuario">
+				  <div class="form-group">
+				    <label for="dni">DNI</label>
+				    <input type="text" name="dni" class="form-control dni" placeholder="DNI del usuario" value="<%=dni %>" required minlength="8">
+				  </div>				  
+				  <div class="form-group">
+				    <div class="row">
+				    	<div class="col-lg-6">
+				    		<label for="nombre">Nombres</label>
+				    		<input type="text" name="nombres" class="form-control nombres" placeholder="Nombres" value="<%=nombres %>" required minlength="2">		    		
+				    	</div>
+				    	<div class="col-lg-6">
+						    <label for="apellidos">Apellidos</label>
+						    <input type="text" name="apellidos" class="form-control apellidos" placeholder="Apellidos" value="<%=apellidos %>" required minlength="2">				    		
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+					  <div class="row">					  	
+						  <div class="col-lg-6">
+						    <label for="email">Email</label>
+						    <input type="text" name="email" class="form-control email" placeholder="Email" value="<%=email %>" required minlength="2">
+						  </div>
+						  <div class="col-lg-6">
+						    <label for="password">Password</label>
+						    <input type="password" name="password" class="form-control password" placeholder="Password" value="" required minlength="2">
+						  </div>
+					  </div>
+				  </div>				  
+				  <div class="form-group">
+				    <label>Perfil</label>
+				    <select class="form-control perfil" name="perfil_id">
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label for="direccion">Dirección</label>
+				    <input type="text" name="direccion" class="form-control direccion" placeholder="direccion" value="<%=direccion %>" required minlength="2">
+				  </div>				  				  				  				  
+</form>

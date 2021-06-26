@@ -1,0 +1,84 @@
+<form role="form" id="FormularioRequerimiento" class="formRequerimiento">
+<%if(user_id == 0){%>
+				  <div class="form-group">
+				    <h1>Datos del Proveedor</h1>
+				    <div class="row">
+				    	<div class="col-lg-3">
+						    <label>Proveedor</label>
+						    <select class="form-control proveedor" name="proveedor">
+								<option value="">Seleccione...</option>
+							</select>
+				    		<input type="hidden" name="nombreProveedor" class="form-control nombreProveedor">	
+				    	</div>
+				    	<div class="col-lg-3">
+				    		<label>RUC</label>
+				    		<input type="text" name="ruc" class="form-control ruc" readonly="readonly">				    		
+				    	</div>
+				    	<div class="col-lg-3">
+				    		<label>Dirección</label>
+				    		<input type="text" name="direccion" class="form-control direccion" readonly="readonly">
+				    	</div>
+				    	<div class="col-lg-3">
+				    		<label>Teléfono</label>
+				    		<input type="text" name="telefono" class="form-control telefono" readonly="readonly">
+				    	</div>				    	
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="row">
+				  		<div class="col-lg-6">
+						  	<label>Fecha de Entrega</label>
+							<div class="input-group date">
+		                    	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                    	<input type="text" name="fecha_entrega" class="form-control fecha_entrega datepicker">
+		                    </div>				  			
+				  		</div>
+				  		<div class="col-lg-6">
+				  			<label>Total:</label><input type="text" readonly="readonly" name="monto_total" class="form-control total_req" value="0.00">
+				  		</div>
+				  	</div>				  	
+				  </div>
+				  <div class="form-group requerimiento_detalle">
+				  </div>
+<% }else{ %>
+	<div class="form-group">
+		<h1>Datos del Proveedor</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<label>Razon Social:</label>
+				<%=razon_social%>				
+			</div>
+			<div class="col-lg-6">
+				<label>RUC:</label>
+				<%=ruc%>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<label>Dirección:</label>
+				<%=direccion%>				
+			</div>
+			<div class="col-lg-6">
+				<label>Telefono:</label>
+				<%=telefono%>				
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<label>Fecha de creación:</label>
+				<%=fecha_pedido%>
+			</div>
+			<div class="col-lg-6">
+				<label>Fecha de entrega:</label>
+				<%=fecha_entrega%>	
+			</div>
+		</div>
+	</div>
+	<div class="form-group requerimiento_detalle">
+	</div>
+	<div class="form-control text-right">
+		<label>Total:</label>
+		<%= monto_total%>
+	</div>					  
+<% } %>
+</form>

@@ -1,0 +1,23 @@
+		<div class="modal-dialog <%=tamano %>">
+			<div class="modal-content">
+		      	<div class="modal-header">
+		        	<button type="button" class="close btnControl" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        	<h4 class="modal-title"><%= titulo%> </h4>
+		      	</div>
+		      	<div class="modal-body">
+		      		<%=contenidoHTML %>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<% if(btnCerrar){ %>
+		        	<button type="button" class="btn btn-default btnControl" data-dismiss="modal">
+		        		<%=labelCerrar %>		        	
+		        	</button>
+		        	<% } %>
+		        	<% if(btnGuardar){ %>
+		        	<button type="button" class="btn btn-primary btnGuardar btnControl" >
+		        		<%=labelGuardar %>
+		        	</button>
+		        	<% } %>
+		      	</div>
+		    </div>
+		</div>

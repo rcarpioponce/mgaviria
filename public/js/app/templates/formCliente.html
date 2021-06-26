@@ -1,0 +1,29 @@
+<form role="form" id="FormularioCliente" class="formCliente">
+				  <div class="form-group">
+				    <label>Tipo de documento</label>
+				    <select class="form-control tipo_doc" name="tipo_doc">
+				    	<option value="dni" <%if(tipo_doc == 'dni'){%>selected="selected"<%}%>>DNI</option>
+				    	<option value="ruc" <%if(tipo_doc == 'ruc'){%>selected="selected"<%}%>>RUC</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+				    <label for="num_doc">Número del documento</label>
+				    <input type="text" name="num_doc" class="form-control num_doc" placeholder="nro. de doc. del cliente" value="<%=num_doc %>" required minlength="8">
+				  </div>
+				  <div class="form-group">
+				    <label for="razon_social">Razón social</label>
+				    <input type="text" name="razon_social" class="form-control razon_social" placeholder="Nombre de la empresa" value="<%=razon_social %>" required minlength="2">
+				  </div>
+				  <div class="form-group">
+				    <label for="nombre">Descripción</label>
+				    <textarea name="descrípcion" class="form-control descripcion" placeholder="Descripción de la empresa" required minlength="2"><%=descripcion %></textarea>
+				  </div>				  				  
+				  <div class="form-group">
+				    <label for="dir_domicilio">Dirección</label>
+				    <input type="text" name="dir_domicilio" class="form-control dir_domicilio" placeholder="Dirección del cliente" value="<%=dir_domicilio %>" required minlength="5">
+				  </div>
+				  <div class="form-group">
+				    <label for="web">Página web</label>
+				    <input type="text" name="web" class="form-control web" placeholder="Página web de la empresa" value="<%=web %>" required minlength="5">
+				  </div>
+</form>

@@ -1,0 +1,67 @@
+<form role="form" id="FormularioProveedor" class="formProveedor">
+				  <div class="form-group">
+				    <div class="row">
+				    	<div class="col-lg-6">
+						    <label for="ruc">RUC</label>
+						    <input type="text" name="ruc" class="form-control ruc" placeholder="Ruc de la empresa (11 dígitos)" data-mask="999999999999" value="<%=ruc %>" required minlength="11">				    		
+				    	</div>
+				    	<div class="col-lg-6">
+						    <label for="razon_social">Razón social</label>
+						    <input type="text" name="razon_social" class="form-control razon_social" placeholder="Nombre de la empresa" value="<%=razon_social %>" required minlength="2">
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="row">
+				  		<div class="col-lg-6">
+						    <label for="direccion">Dirección</label>
+						    <input type="text" name="direccion" class="form-control direccion" placeholder="Dirección de la empresa" value="<%=direccion%>" required minlength="11">
+				  		</div>
+				  		<div class="col-lg-6">
+						    <label for="web">Página web</label>
+						    <input type="url" name="web" class="form-control web" placeholder="Página web de la empresa" value="<%=web %>" required minlength="12">				  		
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="row">
+				  		<div class="col-lg-4">
+						    <label for="banco">Banco</label>
+						    <select  name="banco_id" class="form-control banco_id" required>
+						    	<option value="">Seleccione</option>
+						    </select>				  			
+				  		</div>
+				  		<div class="col-lg-4">
+						    <label for="moneda">Moneda</label>
+						    <select   name="tipo_moneda" class="form-control tipo_moneda" required>
+						    	<option value="soles">Soles</option>
+						    	<option value="dolares">Dólares</option>
+						    </select>				  			
+				  		</div>
+				  		<div class="col-lg-4">
+						    <label for="nro_cta">Nro de Cta.</label>
+						    <input type="text" name="nro_cta" class="form-control nro_cta" data-mask="999-9999999999" placeholder="Ejm 999-9999999999" value="<%=nro_cta%>" required minlength="14">				  			
+				  		</div>
+				  	</div>
+				  </div> 				  
+				  <div class="form-group">
+				    <div class="row">
+				    	<div class="col-lg-4">
+						    <label for="telefono">Teléfono</label>
+						    <input type="text" name="telefono" class="form-control telefono" placeholder="Teléfono de la empresa" value="<%=telefono%>" required minlength="7">				    		
+				    	</div>
+				    	<div class="col-lg-4">
+						    <label for="correo">Correo</label>
+						    <input type="email" name="correo" class="form-control correo" placeholder="Correo de la empresa" value="<%=correo%>" required minlength="11">				    		
+				    	</div>
+				    	<div class="col-lg-4">
+						    <label for="contacto">Contacto</label>
+						    <input type="text" name="contacto" class="form-control contacto" placeholder="Persona a contactar" value="<%=contacto%>" required minlength="6">		
+				    	</div>
+				    </div>
+				  </div>				  				  
+				  <div class="form-group">
+				    <label for="nombre">Descripción</label>
+				    <textarea name="descripcion" class="form-control descripcion" placeholder="Descripción de la empresa" required minlength="2"><%=descripcion %></textarea>
+				  </div>				  				  
+</form>

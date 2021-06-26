@@ -1,0 +1,169 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'unistall',
+1 verbose cli   'underscore' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of D:\wamp\www\mgaviria\public\package.json
+5 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\backbone\package.json
+6 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\gulp\package.json
+7 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\gulp-inject\package.json
+8 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\gulp-uglify\package.json
+9 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\jquery\package.json
+10 verbose installManyTop reading scoped package data from D:\wamp\www\mgaviria\public\node_modules\underscore\package.json
+11 info package.json jquery@2.1.4 No license field.
+12 info package.json gulp-inject@1.5.0 No license field.
+13 verbose readDependencies loading dependencies from D:\wamp\www\mgaviria\public\package.json
+14 silly cache add args [ 'unistall', null ]
+15 verbose cache add spec unistall
+16 verbose install underscore is installed as 1.8.3
+17 silly cache add args [ 'underscore', null ]
+18 verbose cache add spec underscore
+19 silly cache add parsed spec { raw: 'unistall',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'unistall',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: '*',
+19 silly cache add   type: 'range' }
+20 silly addNamed unistall@*
+21 verbose addNamed "*" is a valid semver range for unistall
+22 silly addNameRange { name: 'unistall', range: '*', hasData: false }
+23 silly mapToRegistry name unistall
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/unistall
+27 verbose addNameRange registry:https://registry.npmjs.org/unistall not in flight; fetching
+28 silly cache add parsed spec { raw: 'underscore',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'underscore',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: '*',
+28 silly cache add   type: 'range' }
+29 silly addNamed underscore@*
+30 verbose addNamed "*" is a valid semver range for underscore
+31 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+32 silly mapToRegistry name underscore
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/underscore
+36 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+37 verbose request uri https://registry.npmjs.org/unistall
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 23:48:20
+40 verbose request id 5f4cf27175e2b841
+41 http request GET https://registry.npmjs.org/unistall
+42 verbose request uri https://registry.npmjs.org/underscore
+43 verbose request no auth needed
+44 info attempt registry request try #1 at 23:48:20
+45 verbose etag "1R31VY1GC0Y5JTDRNCMV2ATIO"
+46 http request GET https://registry.npmjs.org/underscore
+47 http 304 https://registry.npmjs.org/underscore
+48 silly get cb [ 304,
+48 silly get   { date: 'Tue, 25 Aug 2015 04:48:22 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     'cache-control': 'max-age=60',
+48 silly get     etag: '"1R31VY1GC0Y5JTDRNCMV2ATIO"',
+48 silly get     age: '20',
+48 silly get     connection: 'keep-alive',
+48 silly get     'x-served-by': 'cache-jfk1020-JFK',
+48 silly get     'x-cache': 'HIT',
+48 silly get     'x-cache-hits': '1',
+48 silly get     'x-timer': 'S1440478102.440157,VS0,VE0',
+48 silly get     vary: 'Accept' } ]
+49 verbose etag https://registry.npmjs.org/underscore from cache
+50 verbose get saving underscore to C:\Users\Renzo\AppData\Roaming\npm-cache\registry.npmjs.org\underscore\.cache.json
+51 http 404 https://registry.npmjs.org/unistall
+52 verbose headers { 'content-type': 'application/json',
+52 verbose headers   'cache-control': 'max-age=0',
+52 verbose headers   'content-length': '2',
+52 verbose headers   'accept-ranges': 'bytes',
+52 verbose headers   date: 'Tue, 25 Aug 2015 04:48:22 GMT',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   age: '0',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'x-served-by': 'cache-jfk1025-JFK',
+52 verbose headers   'x-cache': 'MISS',
+52 verbose headers   'x-cache-hits': '0',
+52 verbose headers   'x-timer': 'S1440478102.383370,VS0,VE81' }
+53 silly get cb [ 404,
+53 silly get   { 'content-type': 'application/json',
+53 silly get     'cache-control': 'max-age=0',
+53 silly get     'content-length': '2',
+53 silly get     'accept-ranges': 'bytes',
+53 silly get     date: 'Tue, 25 Aug 2015 04:48:22 GMT',
+53 silly get     via: '1.1 varnish',
+53 silly get     age: '0',
+53 silly get     connection: 'keep-alive',
+53 silly get     'x-served-by': 'cache-jfk1025-JFK',
+53 silly get     'x-cache': 'MISS',
+53 silly get     'x-cache-hits': '0',
+53 silly get     'x-timer': 'S1440478102.383370,VS0,VE81' } ]
+54 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+55 silly addNameRange versions [ 'underscore',
+55 silly addNameRange   [ '1.0.3',
+55 silly addNameRange     '1.0.4',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.1.1',
+55 silly addNameRange     '1.1.2',
+55 silly addNameRange     '1.1.3',
+55 silly addNameRange     '1.1.4',
+55 silly addNameRange     '1.1.5',
+55 silly addNameRange     '1.1.6',
+55 silly addNameRange     '1.1.7',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '1.2.1',
+55 silly addNameRange     '1.2.2',
+55 silly addNameRange     '1.2.3',
+55 silly addNameRange     '1.2.4',
+55 silly addNameRange     '1.3.0',
+55 silly addNameRange     '1.3.1',
+55 silly addNameRange     '1.3.2',
+55 silly addNameRange     '1.3.3',
+55 silly addNameRange     '1.4.0',
+55 silly addNameRange     '1.4.1',
+55 silly addNameRange     '1.4.2',
+55 silly addNameRange     '1.4.3',
+55 silly addNameRange     '1.4.4',
+55 silly addNameRange     '1.5.0',
+55 silly addNameRange     '1.5.1',
+55 silly addNameRange     '1.5.2',
+55 silly addNameRange     '1.6.0',
+55 silly addNameRange     '1.7.0',
+55 silly addNameRange     '1.8.0',
+55 silly addNameRange     '1.8.1',
+55 silly addNameRange     '1.8.2',
+55 silly addNameRange     '1.8.3' ] ]
+56 silly addNamed underscore@1.8.3
+57 verbose addNamed "1.8.3" is a plain semver version for underscore
+58 silly cache afterAdd underscore@1.8.3
+59 verbose afterAdd C:\Users\Renzo\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json not in flight; writing
+60 verbose afterAdd C:\Users\Renzo\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json written
+61 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/unistall
+61 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:239:14)
+61 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
+61 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:354:22)
+61 verbose stack     at Request.emit (events.js:110:17)
+61 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1207:14)
+61 verbose stack     at Request.emit (events.js:129:20)
+61 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1153:12)
+61 verbose stack     at IncomingMessage.emit (events.js:129:20)
+61 verbose stack     at _stream_readable.js:908:16
+61 verbose stack     at process._tickCallback (node.js:355:11)
+62 verbose statusCode 404
+63 verbose pkgid unistall
+64 verbose cwd D:\wamp\www\mgaviria\public\js\app
+65 error Windows_NT 6.3.9600
+66 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "unistall" "underscore"
+67 error node v0.12.7
+68 error npm  v2.11.3
+69 error code E404
+70 error 404 Registry returned 404 for GET on https://registry.npmjs.org/unistall
+70 error 404
+70 error 404 'unistall' is not in the npm registry.
+70 error 404 You should bug the author to publish it (or use the name yourself!)
+70 error 404
+70 error 404 Note that you can also install from a
+70 error 404 tarball, folder, http url, or git url.
+71 verbose exit [ 1, true ]

@@ -1,0 +1,17 @@
+<td><%= id%></td>
+<td><%= ruc%></td>
+<td><%= razon_social%></td>
+<td><%= monto_total %></td>
+<td><%= fecha_pedido %></td>
+<td><%= fecha_entrega %></td>
+<td>
+<label class="label <%if(estado == "por aprobar"){%>label-success<%}else{%>label-primary<%}%>">
+<%= estado %>
+</label>
+</td>
+<td>
+    <div class="btn btn-success btnEditar"><i class="fa fa-pencil"></i> Detalle</div>
+	<%if(estado == "aprobadoxxx"){%>
+    <div class="btn btn-primary btnDetalle"><i class="fa fa-pencil"></i> Recepción</div>
+	<%}%>
+</td>

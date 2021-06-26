@@ -1,0 +1,14 @@
+<td><%= id%></td>
+<td><%= nombre%></td>
+<td>
+	<%if(estado == 'activo'){%>
+		<label class="label label-primary"><%= estado%></label>
+	<%}%>
+	<%if(estado == 'inactivo'){%>
+		<label class="label label-danger"><%= estado%></label>
+	<%}%>	
+</td>
+<td>
+    <div class="btn btn-success btnEditar"><i class="fa fa-pencil"></i> Editar</div>
+    <div class="btn btn-danger btnEliminar"><i class="fa fa-times"></i> Eliminar</div>
+</td>

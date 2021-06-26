@@ -1,0 +1,22 @@
+{
+  "name": "appAlmacen",
+  "version": "0.0.1",
+  "description": "aplicacion de almacen para marie gaviria",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Renzo Carpio <me@renzocarpio.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "underscore": "1.6.0",
+    "jquery": "~2.1.4"
+  }
+}

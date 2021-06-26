@@ -1,0 +1,13 @@
+<form role="form" id="FormularioMarca" class="formMarca">
+				  <div class="form-group">
+				    <label for="nombre">Nombre</label>
+				    <input type="text" name="nombre" class="form-control nombre" placeholder="Nombre del almacen" value="<%=nombre %>" required minlength="2">
+				  </div>
+				  <div class="form-group">
+				    <label>Estado</label>
+				    <select class="form-control estado" name="estado">
+					  <option value="activo" <%if(estado == 'activo'){%>selected="selected" <%}%> >activo</option>
+					  <option value="inactivo"  <%if(estado == 'inactivo'){%>selected="selected" <%}%> >inactivo</option>
+					</select>
+				  </div>
+</form>
